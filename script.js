@@ -1,14 +1,14 @@
+var taskNumber = 0;
 
-let question = window.prompt("enter a number")
 
-evenOrOdd(question);
+document.getElementById("submit-btn").addEventListener("click", addTask())
 
-function evenOrOdd (userNum) {
-let num = userNum;
-if (num % 2 == 0) {
-  console.log( `${num} is even`)
-} else{
-  console.log(`${num} is odd`)
+
+function addTask() {
+let userinput = document.getElementById("input").value 
+const task = document.createElement("div");
+task.setAttribute("id", taskNumber);
+taskNumber++;
+task.innerText = userinput;
+document.body.appendChild(task);
 }
-}
-

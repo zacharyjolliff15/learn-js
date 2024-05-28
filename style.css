@@ -4,14 +4,29 @@ body {
     padding: 20px;
   }
   
-  h1 {
-    color: #333;
+  .title {
+    display: flex;
+    justify-content: center;
+    color: black;
+    background-color: green;
+    font-size: 100px;
   }
-  
-  button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+
+  .input-container{
+    display: flex;
+    height: 26px;
+    gap: 26px;
   }
+
+  #input{
+    border-radius: 4px;
+  }
+
+  #submit-btn{
+    background-color: black;
+    color: white;
+    padding: 1px 1px 1px 1px;
+    height: 100%;
+    border-radius: 4px;
+  }
+

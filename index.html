@@ -4,13 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- try to get to lesson 24 in https://www.youtube.com/watch?v=8dWL3wF_OMw -->
-  <title>JavaScript Learning</title>
+  <title>Counter Program</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Welcome to JavaScript Learning!</h1>
-  <p>Click the button below to see a message:</p>
-  <button id="myButton">Click me!</button>
+  <h1 class="title">To Do List</h1>
+  <h2>Add Items</h2>
+  <!-- <p>Text edited succesfully</p> -->
+  <div class="input-container">
+  <input id="input"></input> 
+  <button id="submit-btn" onclick="addTask()">Submit</button>
+  </div>
+
+  <div class="Tasks">
+    <h2>Tasks</h2>
+    <div id="div1">The text above has been created dynamically.</div>
+    <p></p>
+  </div>
+
 
   <script src="script.js"></script>
 </body>
